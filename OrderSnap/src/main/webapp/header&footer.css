@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Style the header*/
+  
+  .header {
+      position: sticky;
+      top:0;
+      left:0;
+      width:100%;
+      display:flex;
+      height:100px;
+      z-index: 999;
+      justify-content: space-between;
+      background-color: rgb(249, 250, 251,0.8);
+      opacity: 80%;  
+  
+    }
+    
+    /* Style the header links */
+    .header a {
+      float: left;
+      line-height: 10px;
+      font-size: 18px;
+    }
+    
+    /* Style the logo and navigation bar buttons */
+    .logo {
+      height: 70px;
+      width: 250px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .brand{
+      margin-top:50px;
+      position: inherit;
+    }
+    .header button{
+      border-radius: 25px;
+      width:100px;
+      height:25px;
+      color: black;
+      text-align: center;
+      margin-right: 10px;
+      margin-top: 40px;
+      border: #ddd;
+    }
+    
+    /* Change the background color on mouse-over */
+    .header button:hover {
+      background-color: black;
+      color: white;
+    }
+    
+    /* Style the user button*/
+    .userbtn{
+      border-radius: 10px;
+      height:50px;
+      background-color:none;
+      opacity: 0.6;
+      float:right;
+      margin-top: 20px;
+      margin-left: 0px;
+      display:flex;
+      justify-content: center;
+      padding-top: 10px;
+      padding-bottom:5px;
+    }
+    .userbtnimg{
+      float: right;
+      margin-top: -5px;
+    }
+    .userbtntext{
+      float:left;
+      font-size: 20px;
+      margin-top: 10px;
+      margin-right: 5px;
+    }
+    .userbtntext a{
+      color: black;
+    }
+    
+    .header .userbtn:hover {
+      background: rgb(142, 140, 140);
+      color: white;
+    }
+    .header .userbtn a:hover {
+      
+      color: white;
+    }
+    /* Float the link section to the relavant side */
+    .header-right {
+      float: right;
+    }
+    .brand {
+      float:top;
+      float: right;
+    }
+   
+  
+  
+  /* Add an active class to highlight the current page */
+  .active {
+    background-color: rgb(174, 170, 170);
+    color: black;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens(responsive part) */
+  .navbar .icon {
+    display: none;
+  }
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /*Search Bar*/
+  
+
+  .search form{
+    background-color: white;
+    width: 400px;
+    height: 30px;
+    display: flex;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 35px;
+  }
+  .search form .input{
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius:10px 0 0 10px;
+    
+  }
+  .search form #searchbtn{
+    background: black;
+    border: none;
+    outline: none;
+    padding:10px 20px;
+    color: white;
+    border-radius:0 10px 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .search form #searchbtn:hover{
+    background-color: darkgray;
+    color: black;
+    font-weight: bold;
+  }
+  .search form .searchimg{
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  } 
+/*end of search*/
+
+
+
+  /*responsive part for header*/
+  @media screen and (max-width: 600px){
+    .header{flex-direction: column;}
+  }
+  
+    .section-1{
+        height: 100vh;
+    }
+    
+    
+  
+  
+  /*Footer stylings*/
+  footer{
+    background-image:url(event1.jpg);
+    background-size: cover;
+    margin-top: 0px;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .footer-container{
+    width: 98%;
+    height:55vh;
+    background: none;
+    color: #f9f9f9;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footerhead1{
+    font-size: 17px;
+    margin-right: 4rem;
+  }
+  #footerhead1des{
+     margin-top: 8px;
+   
+  }
+  .footerhead{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    font-size: large;
+  }
+  .footerhead h2,.footer-email h2{
+    margin-bottom: 2rem;
+  }
+  .footerhead a{
+    color: #f9f9f9;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footerhead a:hover{
+    color: aqua;
+    transition: 0.4s ease-out;
+    font-size: larger;
+  }
+  
+  #footermail{
+    width:250px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size:1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #footermail::placeholder{
+    color:darkgrey;
+  }
+  
+  #footerc-btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    background-color:lightgray;
+    color: black;
+    text-decoration-style: solid;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    font-size:1rem;
+    
+  }
+  #footerc-btn:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+    transition: all 0.4s ease-out;
+  
+  }
+  .fimg{
+    background-color: white;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    height:30px;
+    width:30px;
+    
+  }
+  .fimg:hover{
+    height:40px;
+    width:40px;
+    background-color: aqua;
+  }
+  .copyright{
+    color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 50px;
+  }
+  
+  
+  @media screen and (max-width: 600px){
+    .footer-container{
+      flex-direction: column;
+      margin:0 auto;
+    }
+  }
